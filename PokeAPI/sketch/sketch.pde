@@ -15,6 +15,7 @@ void setup() {
 void draw() {
   background(51);
   
-  image(pokemon.imgFront, 200, height / 2, 300, 300);  
-  image(pokemon.imgBack, 600, height / 2, 300, 300);
+  image(pokemon.imgFront, 200, height / 2, 200, 200);  
+  image(pokemon.imgShiny, 400, height / 2, 200, 200);
+  image(pokemon.imgBack, 600, height / 2, 200, 200);
 }

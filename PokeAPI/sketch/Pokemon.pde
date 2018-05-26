@@ -4,6 +4,7 @@ class Pokemon {
   // Below attributes will be retrieved by API
   int id;
   PImage imgFront;
+  PImage imgShiny;
   PImage imgBack;
   
   Pokemon(String name) {
@@ -20,9 +21,11 @@ class Pokemon {
     
     JSONObject sprites = json.getJSONObject("sprites");
     String imgLinkFront = sprites.getString("front_default");
+    String imgLinkShiny = sprites.getString("front_shiny");
     String imgLinkBack = sprites.getString("back_default");
     
     this.imgFront = loadImage(imgLinkFront);
+    this.imgShiny = loadImage(imgLinkShiny);
     this.imgBack = loadImage(imgLinkBack);
   }
   
